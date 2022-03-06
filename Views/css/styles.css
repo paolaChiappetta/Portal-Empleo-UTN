@@ -1,0 +1,964 @@
+:root
+{
+--blue: #245c97;
+--white: #ffffff;
+--black: #212121;
+--grey: #757575;
+--lightblue: #a4e4fc;
+}
+
+html
+{
+font-size: 62.5%;
+box-sizing: border-box;
+scroll-snap-type: y mandatory;
+}
+
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.logo
+{
+
+    background-image: url(../img/UTNlogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    margin-top: 3rem;
+
+}
+
+
+.title
+ {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--grey);
+    font-weight: 600;
+
+}
+
+.nav-bg
+{
+    background-color: var(--blue);
+}
+
+.navBarra
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+ }
+
+
+
+.navBarra a
+{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 800;
+    padding: 2.5rem;
+    font-size: 2.5rem;
+
+}
+
+.navBarra a:hover
+{
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+
+.ourMision-Bg
+{
+    background-image: url(../img/tecnology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: center;
+}
+
+
+.ourMision
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 3rem;
+    color: var(--white);
+
+}
+
+.ourMision p
+{
+    font-size: 3.5rem;
+}
+
+.mainCompanies
+{
+color: var(--blue);
+text-align:center;
+margin-top: 5rem;
+font-size: 4rem;
+}
+
+.companies
+{
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+
+}
+
+.logoAccenture
+{
+    background-image: url(../img/accenture.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+
+}
+
+.logoAvalith
+{
+    background-image: url(../img/avalith.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+
+}
+
+.logoGlobant
+{
+    background-image: url(../img/globant.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+}
+
+.companies2
+{
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+
+}
+.logoMakingSense
+{
+    background-image: url(../img/makingSense.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+}
+
+.logoTemperies
+{
+    background-image: url(../img/temperies.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    background-position: center;
+}
+
+.logoDelPlata
+{
+    background-image: url(../img/delPlata.jpg);
+    background-repeat: no-repeat;
+    height: 150px;
+    background-position: center;
+}
+
+.contact
+{
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 0rem;
+    position: relative;
+}
+
+.contactText
+{
+    margin-top: 2rem;
+    color: var(--grey);
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+}
+
+.contactForm
+{
+background-color: var(--grey);
+width: min(48rem, 100%);
+margin: auto;
+padding: 2rem;
+border-radius: 1rem;
+}
+
+.contactForm fieldset
+{
+    border: none;
+}
+
+.contactForm legend
+{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.fields-contactForm-Container
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+}
+
+.fields-contactForm:nth-child(3)
+{
+    grid-column: 1/3;
+}
+
+.fields-contactForm:nth-child(4)
+{
+    grid-column: 1/3;
+}
+
+.fields-contactForm
+{
+margin-bottom: 1rem;
+}
+
+.fields-contactForm textarea
+{
+height: 15rem;
+}
+
+.fields-contactForm label
+{
+    color: var(--white);
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 2rem;
+}
+
+.input-text
+{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+
+.info
+{
+    text-align: center;
+    color: var(--grey);
+    font-size: 2rem;
+}
+
+.map
+{
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    background-position: center;
+}
+
+.loginForm
+{
+background-color: var(--grey);
+width: 700px;
+padding: 2rem;
+border-radius: 1rem;
+margin: 0 auto;
+margin-top: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.loginContainer legend
+{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.loginContainer label
+{
+    color: var(--white);
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.inputUsername
+{
+    width: 400px;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+.loginButton
+{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+.rejectionMessaje
+{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.hello-Bg
+{
+    background-image: url(../img/tecnology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: center;
+}
+
+
+.hello
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 4rem;
+    color: var(--white);
+
+}
+
+.hello p
+{
+    margin-top: 2rem;
+}
+
+.studentOptions
+{
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 0rem;
+    position: relative;
+
+}
+
+
+.profileContainer
+{
+    background-color: var(--grey);
+    width: min(40rem, 100%);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContainer legend
+{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 1.8rem;
+    border-radius: 1.5rem;
+}
+
+
+.profileContainer a
+{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+
+
+}
+
+.profilePicture
+{
+    background-image: url(../img/profilePicture2.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 200px;
+    background-position: center;
+    border-radius: 1.5rem;
+    border-color: var(--blue);
+
+
+}
+
+.enterpriseStudentContainer
+{
+    width: min(40rem, 100%); 
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enterprisePicture
+{
+    background-image: url(../img/enterprise.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    background-position: center;
+    border-radius: 1.5rem;
+    border-color: var(--blue);
+   
+
+}
+
+.enterpriseStudentContainer a
+{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.searchStudentContainer
+{
+    width: min(40rem, 100%); 
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.searchPicture
+{
+    background-image: url(../img/searchJob.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    background-position: center;
+    border-radius: 1.5rem;
+    border-color: var(--blue);
+   
+
+}
+
+.searchStudentContainer a
+{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.studentInfo
+{
+    background-color: var(--grey);
+    border-radius: 1.5rem;
+    margin: auto;
+    width: 600px;
+    position: relative;
+}
+
+.studentInfo legend
+{
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: var(--blue);
+    text-align: center;
+
+}
+
+.data
+{
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.dataAnswer
+{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.filterForm
+{
+background-color: var(--grey);
+width: min(60rem, 100%); 
+padding: 1.5rem;
+border-radius: 1rem;
+margin: 0 auto;
+margin-top: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.filterByNameContainer label
+{
+    color: var(--white);
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.inputFilter
+{
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+
+.enterpriseStudentListContainer
+{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+.enterpriseStudentListContainer a
+{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: var(--white);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.enterpriseStudentDetailContainer
+{
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    margin: auto;
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterpriseStudentDetailContainer legend
+{
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: var(--blue);
+    text-align: center;
+
+}
+
+.dataDetail
+{
+    font-size: 2rem;
+    color: var(--blue);
+    text-align: center;
+}
+
+.dataAnswerDetail
+{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.backButton, .detailButton
+{
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80rem;
+    margin-right: 80rem;
+    
+    
+}
+
+.filterJobOffersSections
+{
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 0rem;
+    position: relative;
+
+}
+
+.filterJobOffersContainer
+{
+background-color: var(--grey);
+padding: 1.5rem;
+width: min(175rem, 100%); 
+border-radius: 1rem;
+margin: 0 auto;
+margin-top: 3rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.filterJobOffersContainer label
+{
+    color: var(--white);
+    margin-bottom: .5rem;
+    margin-top: 0rem;
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.keyWord
+{
+    background: var(--white);
+    border:var(--black);
+    border-radius: 1rem;
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px;
+    width: 490px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+ }
+
+ .enterprise
+{
+    background: var(--white);
+    border:var(--black);
+    border-radius: 1rem;
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px;
+    width: 490px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+ }
+
+ .career
+ {
+    background: var(--white);
+    border:var(--black);
+    border-radius: 1rem;
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px;
+    width: 490px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+
+ .offerButton, .filterButton
+{
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.columnList
+{
+    columns: 3; 
+  -webkit-columns: 3; 
+  -moz-columns: 3; 
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid; 
+  
+}
+
+.columnList
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.takeOffFilterButton
+{
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 80rem;
+    margin-right: 80rem;
+}
+
+
+.studentOffersListContainer
+{
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    margin: auto;
+    width: 700px;
+    position: relative;
+}
+
+.offerData
+{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.offerDataAnswer
+{
+    font-size: 2.5rem;
+    color: var(--white);
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.offerDataAnswerDescription
+{
+    font-size: 1.75rem;
+    color: var(--white);
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.offerDataAnswerDate
+{
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.applyButton
+{
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--grey);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
+}
+
+.OffersMessajes
+{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.ApplyForm
+{
+background-color: var(--grey);
+width: min(80rem, 100%); 
+padding: 1.5rem;
+border-radius: 1rem;
+margin: 0 auto;
+margin-top: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.studentApplyContainer
+{
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    margin: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputApply
+{
+    width: 600px;
+    height: 160px;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+.questionContainer
+{
+background-color: var(--grey);
+width: 700px;
+padding: 2rem;
+border-radius: 1rem;
+margin: 0 auto;
+margin-top: 3rem;
+margin-bottom: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.IamButton
+{
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    
+}
+
+.postulatesPicture
+{
+    background-image: url(../img/candidatos.jpg);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    background-position: center;
+    border-radius: 1.5rem;
+    border-color: var(--blue);
+   
+
+}
